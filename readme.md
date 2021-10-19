@@ -11,3 +11,4 @@ About this demo website:
 
 The dazzling background colors are just to make the layout appear clearer. 
 In the process of improving this website, the background color will be removed.
+The specific style of the logo and menu will also be gradually beautified in the follow-up
