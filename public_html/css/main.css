@@ -1,64 +1,127 @@
 /****************ALL*******************/
+html{
+    margin:0;
+    height: 100%;
+
+}
 body {
+    background: black;
     display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    min-height: 130vh;
+    width: 100%;
+    grid-template-rows: 28vh auto 5vh;
     font-family: system-ui, sans-serif;
     margin: 0;
-}
-
-header {
-    background: lightpink;
-    height: auto;
-    padding: 1rem;
-}
-
-footer {
-    background: wheat;
-    padding: 0;
-    text-align: center;
-}
-
-/****************INDEX*******************/
-/*----LOGO----*/
-#logo {
-    background-color: green;
-    width: 30vw;
-    height: 10vh;
-    float: left;
-}
-
-/*----NAVI----*/
-#primaryLinks {
-    height: 10vh;
-    width: 50vw;
-    background-color: red;
-    float: right;
-    margin: 0;
-
-}
-
-#primaryLinks li {
-    display: inline;
-
-}
-
-/*----MAIN CONTAINER----*/
-main {
-    background: coral;
-    padding: 1rem;
-}
-
-/*----HERO----*/
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://live.staticflickr.com/3051/2668834386_ef9cfbd4e0_b.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
+
+
+header {
+    /*height: 25vh;*/
+    padding: 1rem;
+}
+/*----LOGO----*/
+#logo{
+    width: 30vw;
+    height: auto;
+    float: left;
+}
+#logo img{
+    width: 100%;
+}
+main {
+    padding: 1rem;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #aaaaaa;
+    text-align: center;
+
+}
+
+/*----NAVI----*/
+
+#primaryLinks {
+    height: auto;
+    width: 30%;
+    float: right;
+    color: #888888;
+    display: block;
+    margin-top: 18vh;
+    border-right: solid #7AF8FF 20px;
+}
+#primaryLinks ul {
+    margin: 0;
+    padding: 0;
+}
+#primaryLinks ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#primaryLinks > ul > li > a {
+    color: #aaaaaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+#primaryLinks > ul > li:hover {
+    background: #7AF8FF;
+    color: #050801;
+    box-shadow: 0 0 5px #7AF8FF,
+    0 0 25px #7AF8FF,
+    0 0 50px #7AF8FF,
+    0 0 200px #7AF8FF;
+}
+#primaryLinks > ul > li:hover > a {
+    color: black;
+}
+
+/*----FOR PHONE----*/
+@media screen and (max-width:980px ){
+    body{
+        display: block;
+    }
+    #logo {
+        width: 100%;
+        height: 10vh;
+    }
+    #primaryLinks{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        height: 5vh;
+        width: 100%;
+        font-size: smaller;
+    }
+}
+
+/****************INDEX*******************/
+
+
+/*----MAIN CONTAINER----*/
+
+.hero {
+    background: url("https://live.staticflickr.com/34/93828022_c40c635786_b.jpg") rgba(100, 150, 50, 0.5) no-repeat center center;
+    background-blend-mode: multiply;
+    height: 50%;
+    background-size: cover;
+    position: relative;
+}
 
 #bottom {
     margin-top: 1rem;
@@ -69,154 +132,210 @@ main {
 
 #bottom-left {
     float: left;
-    background-color: white;
-
 }
-
+#bottom-left h3{
+    color: white;
+}
 #bottom-left p {
     display: inline;
+    color: #aaaaaa;
 }
 
 #bottom-right {
     float: right;
-    /*	background-color: white;*/
     text-align: right;
 }
 
 #bigButton {
-    box-shadow: 3px 4px 0px 0px #ffffff;
-    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #666666;
+    background-color: black;
     display: inline-block;
     cursor: pointer;
-    color: #666666;
-    font-family: Arial;
+    color: #7AF8FF;
     font-size: 3vw;
-    font-weight: bold;
-    padding: 2rem 3rem;
+    padding: 1.5rem 5rem;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
+    border: solid #7AF8FF 1px;
+    box-shadow: 0 0 5px #7AF8FF;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    transition: 0.5s;
 }
 
+
 #bigButton:hover {
-    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color: #f6f6f6;
+    background: #7AF8FF;
+    color: #050801;
+    box-shadow: 0 0 5px #7AF8FF,
+    0 0 25px #7AF8FF,
+    0 0 50px #7AF8FF,
+    0 0 200px #7AF8FF;
 }
 
 #bigButton:active {
+    text-decoration: none;
     position: relative;
     top: 1px;
 }
+@media screen and (max-width:980px ) {
+    .hero{
+        width: 100%;
+        height: 30vh;
+        display: inline-block;
+    }
+    #bottom{
+        display: block;
+    }
 
+    #bottom-right {
+        margin-top: 2vh;
+        background-color: white;
+        width: 100%;
+    }
+    #bigButton{
+        display: block;
+        text-align: center;
+        /*width: 100%;*/
+        /*font-size: 10vw;*/
+    }
+
+}
 /****************ABOUT*******************/
 #About_content {
     height: 100%;
-    display: grid;
-    grid-template-columns: 75% 24%;
-    grid-gap: 1rem;
+    color: antiquewhite;
 }
 
-#content_left,
-aside {
-    background-color: grey;
-    display: flex;
-}
 
 #content_left {
     display: grid;
     grid-template-rows: 80% 15%;
     grid-gap: 2rem;
     padding: 1rem;
-
 }
 
-#left_top {
-    background-color: aqua;
 
+@media screen and (max-width:980px ){
+    #About_content{
+        display: block;
+        word-break:break-word;
+    }
 }
-
-#left_bottom {
-    background-color: yellow;
-
-}
-
-aside{
-	display: grid;
-    grid-template-rows: 40% 50%;
-    grid-gap: 2rem;
-
-}
-
-#profile_img{
-	background-color: aqua;
-	margin: 1rem;
-}
-
-#profile{
-	background-color: aqua;
-	margin: 1rem;
-}
-
 
 
 /****************TIME LINE*******************/
 
 #time_content{
-	height: 100%;
-
-}
-
-table{
-	word-wrap: break-word;
-	word-break: break-all;
-	background-color: grey;
-	height: 100%;
-	width: 100%;
-}
-
-
-table thead{
-	width: 100%;
-	height: 8vh;
-	background-color: yellow;
-	background-color: aqua;
-
-}
-table thead, table tr{
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-  }
-
-.yearColumn{
-	width: 15%;
-}
-
-.historyColumn{
-	width: 65%;
-}
-.computerClomn{
-	width: 20%;
-}
-  
-
-tbody {
-    display: block;
-    color: #fff;
+	height: auto;
     text-align: center;
-    height: 65vh;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;  /*滚动更流畅*/
-  }
-
-tbody tr{
-	margin: 2rem 0;
+}
+.timeRow{
+    display: flow;
+}
+.year{
+    margin-top: 2vw;
+    width: 100%;
+    color: #7AF8FF;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.clickable{
+    text-shadow: 0 0 5px #7AF8FF,
+    0 0 25px #7AF8FF,
+    0 0 50px #7AF8FF,
+    0 0 200px #7AF8FF;
+}
+.clickable:hover{
+    cursor: pointer;
+    -webkit-animation: twinkling 1s infinite ease-in-out
+}
+.animated{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes twinkling{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes twinkling{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*==============POPOVER*/
+.webui-popover-inner{
+    width: 50vw;
+    max-height: 500px;
+    overflow: auto;
+    /*background-color: rgba(14, 86, 106, 1);*/
+    background-color: black;
+    border-radius: 5px;
+    color: #cccccc;
+    box-shadow: 0 0 5px black,
+    0 0 5px #7AF8FF,
+    0 0 20px #7AF8FF;
+}
+.webui-popover-content{
+    text-align: justify;
+}
+.webui-popover-content h3{
+    margin:10px;
+}
+.picAndText{
+    display: flex;
+}
+.picAndText p, .picAndText img{
+    margin:10px;
 }
 
 
+.history{
+    display: inline-block;
+    color: white;
+    width: 80%;
+    font-size: 2rem;
+}
+.history p{
+    word-wrap: break-word;
+    text-align: justify;
+}
 
+.arrow{
+    display: block;
+    width: 50%;
+    height: 80px;
+    border-right: solid #7AF8FF 4px;
+    float: left;
+}
+
+@media screen and (max-width:980px ){
+    #time_content{
+        margin-bottom: 50px;
+    }
+    .webui-popover-inner{
+        width: 60vw;
+    }
+    .picAndText{
+        display: block;
+    }
+    .picAndText img{
+        display: none;
+    }
+    .history p{
+        font-size: 1rem;
+        text-align: justify-all;
+    }
+
+}
 
 
 

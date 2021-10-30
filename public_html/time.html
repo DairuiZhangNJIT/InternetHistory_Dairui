@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Line</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.webui-popover.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -14,29 +17,288 @@
     </header>
     <main>
         <div id="time_content">
-            <div class="table-container">
-                <table id="historyInfo">
+            <div class="timeRow">
+                <div class="year">
+                    <span class="clickable" id="year1957">~1957</span>
+                    <div class="webui-popover-content">
+                        <h3>What is a computer looks like?</h3>
+                        <div class="picAndText">
+                        <p style="display: inline;">In the 1950s, people made phone calls, watched TV, listened to music and drove cars... But computers were far from appearing in people's daily life. After all, transistors have only been developed in the past 10 years.
+                            <br><br/>Computers in the world exist in university laboratories,military laboratories and some places that need to process a large amount of data, such as insurance companies and government agencies.
+                            <br><br/>The volume of a computer is very huge, which often requires many programmers to walk around, and even put it in a special cold chamber to cool.</p>
+                        <img style="width: 40%;" title="Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/8432/7751056502_1f8bbb9c49_b.jpg" alt="">
+                        </div>
+                    </div>
 
-                    <thead>
-                        <tr>
-                            <th class="yearColumn">Year</th>
-                            <th class="historyColumn">What happened</th>
-                            <th class="computerColumn">What a computer looks like</th>
-                        </tr>
-                    </thead>
-	                    <tbody>
-	                    	<!-- in time.js -->
-	                    </tbody>
+                </div>
+                <div class="history">
+                    <p>People began to think about how to remotely control a computer and how to let a computer share its computing power to more than one user.
+                        <br><br/>
+                        October, the Soviet Union launched the world's first manmade satellite into orbit.</p>
+                </div>
 
-                </table>
             </div>
+            <div class="arrow"></div>
+<!-- ========================================================================-->
+            <div class="timeRow">
+                <div class="year">
+                    <span>1958</span>
+                </div>
+                <div class="history">
+                    <p>The United States established ARPA (Advanced Research Projects Agency) to develop technology for military purposes.<br><br/> The computer chip was invented by Jack Kilby and Robert Noyce.</p>
+                </div>
+            </div>
+            <div class="arrow"></div>
+<!--           ========================================================================-->
+            <div class="timeRow">
+                <div class="year">
+                    <span class="clickable">1962</span>
+                    <div class="webui-popover-content">
+                        <h3>What is a computer looks like?</h3>
+                        <div class="picAndText">
+                            <p style="display: inline;">At 60s, many people can share a computer, log in through typewriter and telephone line, and dozens of people can be online at the same time.</p>
+                            <img style="width: 50%;" title="Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/8538/8999339647_abbf4623ef_b.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="history">
+                    <p>In order to prevent the Soviets from destroying the telephone system, JCR Licklider invented a computer network called "Galactic network". This ensures that government leaders can also communicate if the telephone system is damaged. <br><br/>In 1964, Douglas Engelbart developed a prototype (GUI and mouse) for modern computers, which laid an important foundation for computers to enter ordinary people's life in the future. <br><br/>ASCII was invented, which was the first general computer standard. It allows machines from different manufacturers to exchange data.</p>
+                </div>
+                <div class="bubble"></div>
+            </div>
+            <div class="arrow"></div>
+<!--             ========================================================================-->
+            <div class="timeRow">
+                <div class="year">
+                    <span class="clickable">1965</span>
+                    <div class="webui-popover-content">
+                        <h3>What is a computer looks like?</h3>
+                        <div class="picAndText">
+                            <p style="display: inline;">In 1965, commercially successful small computer appeared, which could be placed on the desktop.</p>
+                                <img style="width: 50%;" title="Victor 3900 engineering prototype. Photo from https://www.computerhistory.org/" src="https://images.computerhistory.org/timeline/timeline_memorystorage_1965.victor3900.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="history">
+                    <p>With funding from ARPA, Larry Roberts and Thomas Maril created the connection which enabled two computers at MIT's Lincoln Laboratories to communicate with each other using packet switching technology over a telephone line.</p>
+                </div>
+                <div class="bubble"></div>
+            </div>
+            <div class="arrow"></div>
+<!--        ========================================================================-->
+            <div class="timeRow">
+                <div class="year">
+                    <span>1966</span>
+                </div>
+                <div class="history">
+                    <p>With the development of ARPAnet, universities intentionally prepare a smaller computer IMP in front of the larger computer during the connection. It controls network-related activities so that the larger computer can focus the main job. This is the origin of the IMP subnet.</p>
+                </div>
+                <div class="bubble"></div>
+            </div>
+            <div class="arrow"></div>
+
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span class="clickable">1969</span>
+                <div class="webui-popover-content">
+                    <h3>What is a computer looks like?</h3>
+                    <div class="picAndText">
+                        <p style="display: inline;">In the late 1960s, computers were used in hospitals and schools. This new term also began to gain more insight into the eyes of ordinary people, who believed that computers would change the world.
+                            <br><br/>But most people don't have a home computer at this time. (Although some experimental projects have explored the feasibility of a home computer) Computers are mainly expected to perform commercially, mainly for storing, querying, calculating data - such as hospital cases, stock information, and so on.
+                            <br><br/>
+                            At the same time, people's fantasy about computers is simply: "A man in his home can dial a code on the phone and get information on stocks, or weather reports, airline schedules, baseball scores"
+                        </p>
+                        <img style="width: 40%;" title="Kitchen computer. Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/2293/2446835690_5cf8cec213_b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <p>In October, Charlie Kline sent the world's first communication message from a UCLA computer to another Stanford computer:'LO'. It proved that computers can be interconnected.</p>
+            </div>
+            <div class="bubble"></div>
         </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span class="clickable">1971</span>
+                <div class="webui-popover-content">
+                    <h3>What is a computer looks like?</h3>
+                    <div class="picAndText">
+                        <p style="display: inline;">In the early 1970s, as the cost of microprocessors declined, computers finally began to look like "one can own".
+                            <br><br/>There aren't enough computer users for today's Internet boom. 1974. The personal computer Altair8800 was on the market for $400 and sold thousands of copies.
+                        </p>
+                        <img style="width: 50%;" title="Altair 8800. Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/7215/7189105364_ea8b389c8c_b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <p>Ray Tomlinson developed the 1st system to send mail back and forth between the users of APARNET. This is caled electronic mail or Email. The @ symbol was used to tell a person’s name and host name apart. <br><br/>ARPAnet has grown to 23 hosts. <br><br/>At the University of Hawaii, ALOHAnet worked successfully to enable computer communication between islands, enabling end users to transfer data over shared network channels.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1973</span>
+            </div>
+            <div class="history">
+                <p>ARPAnet connected to computers in the United Kingdom and Norway and developed into the Internet. The term Internet was born. <br><br/>E-mail became popular among these hosts. <br><br/>The world's first public computer bulletin board system, Community Memory, was founded in Berkeley, California, by Lee Felsenstein, Efrem Lipkin, Ken Colstad, Jude Milhon, and Mark Szpakowski.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span class="clickable">1974</span>
+                <div class="webui-popover-content">
+                    <h3>What is a computer looks like?</h3>
+                    <div class="picAndText">
+                        <p style="display: inline;">Microsoft and Apple were born one after another.
+                            <br><br/>
+                            In 1976 Queen Elizabeth II sent an e-mail from the Royal Signaling and Radar Agency (RSRE) in Malvine on March 26.
+                        </p>
+                        <img style="width: 40%;" title="Apple’s inspiration for the Lisa and Macintosh computers came from this Xerox Alto. Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/6010/5900034925_264db730a8_b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <p>Vinton Cerf and Bob Kahn, known as the father of the Internet, published the Packet Network Interconnect Protocol, which details the design of TCP. <br><br/>The first Internet service provider (ISP) was born, introducing a commercial version of ARPANTET called Telenet.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1977</span>
+            </div>
+            <div class="history">
+                <p>ARPA actually needs to link its original ARPAnet with its newer networks, such as the Packet Radio Network (PRNET) and Satellite Network (SATNET). In 1977, Cerf and Kahn connected these three networks and demonstrated the validity of their TCP/IP protocols.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1978</span>
+            </div>
+            <div class="history">
+                <p>The U.S. Department of Defense has decided to use the TCP/IP protocol as the standard for data communication networks. Standardization has advanced the development of networks.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span class="clickable">1980</span>
+                <div class="webui-popover-content">
+                    <h3>What is a computer looks like?</h3>
+                    <div class="picAndText">
+                        <p style="display: inline;">In the early 1980s, computers considered top notches had 64K of memory and 500K of storage space.</p>
+                        <img style="width: 40%;" title="Computer's AD. Photo from https://search.creativecommons.org/." src="https://live.staticflickr.com/2342/2123730984_36e10f6dee_b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <p>Tim Berners Lee of the European Centre for Nuclear Research Physics Lab created Enquire, a network hypertext system for project management that attempts to categorize hyperlinks in a way that computers and people can read.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1983</span>
+            </div>
+            <div class="history">
+                <p>All ARPAnet station protocols were converted to TCP/IP. Until then, there was no uniform communication standard for all kinds of computer networks. If there was such a standard, it would mean the birth of the global internet.<br><br/> January 1, 1983, was considered its official birthday. There are EARN in Europe and JU Net in Japan. <br><br/>At the end of the year, in November, another important thing was invented, DNS. With the Domain Name Resolution System, this is much better remembered than the original digital IP address.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1984</span>
+            </div>
+            <div class="history">
+                <p>The OSI standard was officially released. OSI (Open System Interconnection) was the first official standard supported by the International Standards Organization (ISO). OSI was officially released in 1984, starting in 1977 with members of the team that pioneered interconnection on the CYCLADES network in France.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1986</span>
+            </div>
+            <div class="history">
+                <p>In 1986, the National Science Foundation (NSF) established the NSFnet wide area network (WAN) based on five supercomputer centers for scientific research and education services using the TCP/IP communication protocol developed by ARPAnet. <br><br/>Symbolics.com became the first registered domain name in the world.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1987</span>
+            </div>
+            <div class="history">
+                <p>Tens of thousands of hosts are connected to the internet.<br><br/> Cisco launched its first router. GSM Standard Formally Passed. <br><br/>In 1989, The Internet has increased by 1.54Mbps. World.std.com has become the first commercial provider to dial-up the Internet.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1990~1991</span>
+            </div>
+            <div class="history">
+                <p>Tim Berners-Lee introduced the World Wide Web to the world. Redefining the Internet is not just a way to send files from one place to another, but it is itself a "network" of information that anyone on the Internet can upload and download at any time.It has servers, HTML, URLs, and the first graphics browser. The browser also has editor functionality - like a word processor connected to the Internet - reflecting his original vision that the Web also contains authoring and personal organization tools. <br><br/>After the rise of free online services and commercial online services, such as Prodigy, FidoNet, Usenet, Gopher, etc., the importance of ARPA was greatly reduced when NSFNET became the Internet hub. The system was shut down in 1989 and officially retired in 1990.<br><br/> More worms were found.<br><br/> CERN introduces the World Wide Web to the public. <br><br/>Mosaic was born. It was invented by Marc Andreessen. It was the first popular web browser. <br><br/>NSF lifts restrictions so that the Web can be used for commercial purposes.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+            <div class="arrow"></div>
+            <!--      ========================================================================-->
+            <div class="timeRow">
+            <div class="year">
+                <span>1991~</span>
+            </div>
+            <div class="history" id="1991his">
+                <p>After 1991, with the development of hardware technology and the take-off of people's imagination, coupled with the innovative Internet business model, the Internet has started a rapid development: browser war, the new Ipv6 protocol, more service sites and enterprise official networks, the invention of wifi... and even the emergence of negative events such as network viruses, server attacks. This also gradually makes people feel thatThe convenience and risks of the Internet.
+                    <br><br/>After about 2000, familiar websites such as Skype, Safari, Facebook, Youtube, Twitter have been born. Mobile devices have become the dominant force in the Internet for almost a decade. Today, For children born in recent years, using wireless networks to watch cartoons,Play games and communicate with people online is a natural thing in life. In the future, with the development of 5G technology, maybe the network connection is not only for mobile phones or computers, but also for power poles, garbage cans in our city and your jackets and wallets. All of this, without initial attempts, may not happen.
+                    <br><br/>I believe that tens of millions of technicians and researchers have contributed to the Internet in history.Members will be glad to see this, and it is their efforts that have enabled people to have a richer and more convenient lifestyle.</p>
+            </div>
+            <div class="bubble"></div>
+        </div>
+
+        </div>
+
     </main>
     <footer>
-        <p>There will be a footer here.</p>
+        <p>©2021 Dairui Zhang. All Rights Reserved.</p>
     </footer>
-</body>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="js/time.js"></script>
 
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.webui-popover.js"></script>
+
+<script>
+    $('.clickable').webuiPopover({
+        closeable:true,
+        trigger:'hover',
+        animation:'fade',
+        placement:'auto'
+    });
+</script>
 </html>
