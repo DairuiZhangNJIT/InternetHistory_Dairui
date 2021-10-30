@@ -1,14 +1,21 @@
 # History of the Internet IS601
 
-## Dairui Zhang
+### Dairui Zhang - 2021.10.31 Project
 
-2021.10.19 Homework Z-layout and F-layout
+## WEBSITE URL
 
-Demo:
 [History of Internet](http://601history.eastus.azurecontainer.io/)
 
-About this demo website:
+## About This Website
 
-The dazzling background colors are just to make the layout appear clearer. 
-In the process of improving this website, the background color will be removed.
-The specific style of the logo and menu will also be gradually beautified in the follow-up
+This static website is a project assignment for the 2021 Fall semester. The main content is the history of the Internet development until 1991 that is  listed in timeline order. When making this website, I encountered and solved some problems, so I have a better grasp of the basics of CSS.
+
+- **Website layout:** Z-Layout and F-Layout
+- **Development language:** HTML/CSS/JS
+- **Website deployment:** Docker + Azure
+- **Media realizes responsiveness:** @media screen and (max-width:980px ){}
+- **The logo is generated from this website for free:** https://hatchful.shopify.com/
+- **Picture source:** (All pictures have source information added through the title tag)
+    1. https://search.creativecommons.org/
+    2. https://www.computerhistory.org/
+- **Prompt bubble plugin:** [[Webui-popover.js]](https://github.com/sandywalker/webui-popover) 
