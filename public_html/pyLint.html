@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_History of the Internet</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<header>
+    <script src="./js/header.js"></script>
+</header>
+<main>
+    <div id="About_content">
+        <div id="content_left">
+            <div id="left_top">
+                <h1>Pylint tutorial for Python beginners</h1>
+                <p>As a python beginner, you who are reading this article may not have experience in team programming.
+                    (in fact, I wrote this article only because I took a class here.)
+                    <br><br>
+                    We can imagine that in the team, we need to complete a large project with many people, and we will
+                    write code in the same project. <br><br>
+                    At this time, there is a colleague whose code is very messy - meaningless naming, chaotic
+                    indentation... When you need to cooperate with such colleagues, I believe your heart must be full of
+                    reluctance.
+                    <br><br>
+                    Even if your colleagues are very willing to cooperate, everyone has different styles and thinking,
+                    so there must be a standard to unify everyone. Like athletes from various countries participating in
+                    the Olympic Games, they often use English by default. At this time, we can regard English as a
+                    standard of communication.
+                    <br><br>
+                    <br><br>
+                    Pep8 is a guide for Python code style. It helps professional programmers write more readable and
+                    team friendly code. You can read the specific content of pep8 on this website:
+                    <br><br>
+                    <a style="color: #7AF8FF" href="https://www.python.org/dev/peps/pep-0008/
+"> https://www.python.org/dev/peps/pep-0008/
+                    </a>
+                    <br><br>
+                    what? You said it was too hard to remember? Don't worry, you're not alone.
+                    <br><br>
+                    Pylint was born for this. It is a tool to help you find bugs and irregularities in your code.
+                    <br><br>
+                    You can view the official installation and use guide here:
+                    <br><br>
+                    <a style="color: #7AF8FF" href="https://pylint.pycqa.org/en/latest/">https://pylint.pycqa.org/en/latest/</a>
+
+                    <br><br>
+                    Today, let's take a look at what pylint looks like when it is used. Here I use the pylint integrated
+                    in pytest. (pytest is a framework for automated testing.)
+                    <br><br>
+                    Package the written Python project into docker, run docker, and then start terminal.
+                    Run <br><span style="background: #888888">pytest -pylint -cov</span><br> in it.
+                    <br><br>
+                    You can see the result:
+
+                </p>
+                <img style="width: 60%" src="image/img_pylint_1.png" alt="">
+                <img style="width: 60%" src="image/img_pylint_2.png" alt="">
+                <p>Although this figure shows a happy result - 100%, I have encountered many problems in the process of
+                    debugging.
+
+                    <br><br>
+                    Here are some tips for these questions, hoping to help you who are also new!
+                    <br><br>
+                <li>
+                    What if you want pylint to ignore some unimportant warnings?
+                </li>
+                <br><br>
+                You need to add the following words at the beginning of the code:
+                <br><br>
+                <span style="background: #888888"># pylint: disable=unused-argument,redefined-outer-name</span>
+
+                <br><br>
+                The parameter after disable is the warning type that pylint will automatically ignore.
+                <br><br>
+
+                <li>What should I do if the result can't reach 100% and I don't know what's wrong?</li>
+                <br><br>
+                There is a great function to generate HTML from report. <br>
+                You can run the following command:
+                <br><br>
+                <span style="background: #888888">pytest --cov —cov-report=html</span>
+                <br><br>
+
+                After that, an HTML file will be automatically generated in your project folder and opened with a
+                browser. You will find that there are not only your test report results, but also you can click on less
+                than 100% of the items to see what is wrong with which piece of code. Web pages look much better than
+                command-line friends.
+                <br><br>
+                For a code example of pytest, see
+                <a style="color: #7AF8FF" href="https://github.com/DairuiZhangNJIT/Calculator_ Dairui/tree/main">https://github.com/DairuiZhangNJIT/Calculator_
+                    Dairui/tree/main</a></p>
+
+                <h1>OOP terms glossary</h1>
+                <p>OOP (object oriented programming) is the structure of programming. It is different from process
+                    oriented programming. Process oriented can be understood as "taking the result as the goal, writing
+                    code step by step according to the logic of time and process, and finally achieving the goal and
+                    realizing the goal". OOP is dedicated to decomposing programs into various objects.
+                    <br>
+                    Each object can be regarded as different personas. They have their own attributes and abilities.
+                    Then your program uses these roles (objects) and their abilities to interact with each other.
+                    Finally, write your own "script" to complete the program. This makes the code of the program easier
+                    to maintain and simplifies the process of program design.</p>
+                <h3>Here are some frequently mentioned terms:</h3>
+
+                <ul>
+                    <li>Namespace</li>
+                    <p>Namespace is a space that describes the scope. It is used to prevent confusion caused by
+                        duplicate names. For example, in school a, students' student numbers are unique. You won't find
+                        two students with the same student numbers. But if a student of school a and a student of School
+                        B have the same student number, it doesn't matter, because they are not from the same school.
+                        The school here is namespace.</p>
+                    <li>Abstraction</li>
+                    <p>Abstraction refers to the process of finding out and refining the key attributes and behaviors of
+                        objects.
+                    </p>
+
+                    <li>Class</li>
+                    <p>It can be understood as a template or blueprint. It is used to define the attributes, features
+                        and functions of an object. For example, a student has his own name, gender and student number.
+                        And there are some actions: doing homework and taking exams. (this is a static image based on
+                        realistic objective objects)
+                        In this way, we have defined a student class.</p>
+
+                    <li>Polymorphism</li>
+                    <p>Different classes can have the same attributes or methods. For example, we can define another
+                        teacher class, which also has two attributes: name and gender.</p>
+                    <li>Object</li>
+                    <p>Instances generated from class. For example, there are three students, Jack, Mary and Tom. They
+                        are all real student instances generated from the student class blueprint. In Python, you can
+                        create an object by calling the class directly like a function.</p>
+
+                    <li>Instantiation</li>
+                    <p>The process of creating an instance</p>
+
+                    <li>Property</li>
+                    <p>The name, gender and student number just mentioned are property. Characteristic of an object or
+                        class.</p>
+
+                    <li>Method</li>
+                    <p>Just now, doing homework and taking exams is method. Refers to the ability of an object or
+                        class.</p>
+
+                    <li>Constructor</li>
+                    <p>The method called at the moment of object initialization. Usually its name is consistent with the
+                        class containing it.</p>
+
+                    <li>Encapsulation</li>
+                    <p>In the process of programming, every time we generate a new student object, we no longer care
+                        about the implementation details of the original student class. We just need to use it. This
+                        reflects the idea of encapsulation.</p>
+
+                    <li>Inheritance</li>
+                    <p>That is, a class can inherit from another class to get some non private properties of this class.
+                        The inherited class is called a subclass, and the inherited class is called a parent class. But
+                        subclasses can have their own properties and methods. For example, we created subclasses from
+                        student class: liberal arts class and science class. As students' children, they also have the
+                        same name, gender, homework... And other things as their parents. But they can also have
+                        different skills. For example, liberal arts students have skills: reading famous historical
+                        works, and science students have skills: doing chemical experiments.
+                    </p>
+
+                    <li>Factory</li>
+                    <p>This is a development model. For example, when constructing a class student instance, it will be
+                        troublesome to manually create an instance every time. At this time, you can construct a factory
+                        to encapsulate the instantiation process. Then as long as we give orders to the factory from now
+                        on, it will help us construct many students.</p>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <p>©2021 Dairui Zhang. All Rights Reserved.</p>
+    <a href="https://github.com/DairuiZhangNJIT/InternetHistory_Dairui"><strong>Github</strong>Source code</a>
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F601history.eastus.azurecontainer.io%2F">
+        <strong> W3C </strong> Validator </a>
+</footer>
+</body>
+
+</html>

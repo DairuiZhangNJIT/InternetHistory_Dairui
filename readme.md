@@ -2,6 +2,13 @@
 
 ### Dairui Zhang - 2021.10.31 Project
 
+## UPDATE
+2020.11.28 PROJECT 2
+
+Add new 4 pages to show the articles that requaired in project2.
+
+Check the new pages from the "Project 2" in navi menu.
+
 ## WEBSITE URL
 
 [History of Internet](http://601history.eastus.azurecontainer.io/)

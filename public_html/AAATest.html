@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_History of the Internet</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <script src="./js/header.js"></script>
+    </header>
+    <main>
+        <div id="About_content">
+            <div id="content_left">
+                <div id="left_top">
+                    <h1>AAA Test Tips For Beginners</h1>
+                    <p>Before discussing AAA test pattern, let's talk about some knowledge about testing.
+                        <br><br>
+                        Why should we test? Obviously, it's because you have to write good code. And write good code from the beginning as much as possible.
+                        <br>
+                        The procedure without unit test is like that you produce a thousand aircraft parts and assemble them into an aircraft for flight test without any test. This obviously has great security risks, so we should prepare the tested code in the development process.
+                        <br><br>
+                        <h3>So how to test it? We have a set order:</h3>
+                    <h3>Arrange-Act-Assert  </h3>
+                    <ul>
+                        <li>Arrange</li>
+                        <p>Refers to the part that sets the test case</p>
+                        <li>Act</li>
+                        <p>Refers to the part that actually executes the test (such as calling functions and methods)</p>
+                        <li>Assert</li>
+                        <p>Refers to that we must specify an expected result so that the program can judge the test result.</p>
+                    </ul>
+                    <p>As shown in the following code snippet:</p>
+                    <img style="width: 60%" src="image/img_AAA_1.png" alt="">
+                    </p>
+                    <a style="color: #7AF8FF;" href="https://github.com/DairuiZhangNJIT/Calculator_Dairui/tree/main">Here to find the whole code</a>
+                    <p>The above code fragment is to test whether the addition of a calculator can be calculated correctly. It seems that as long as we prepare some figures in advance, we can carry out the test.
+                        <br><br>
+                        <h3>CSV Read By Pandas</h3>
+                        However, in the actual project, we may need to test many groups of different data - if we need to test 500 addition formulas, should we input these numbers one by one at this time?
+                        <br><br>
+                        That's too tired. So programmers need to automate testing and try to leave the work to machines. At this time, we will read the data from the CSV file.
+                    <br><br>
+                    <p>Python is very simple to read CSV data.
+                        <br>You only need to import pandas library to process CSV files into dataframe format, and then operate like a two-dimensional array.</p>
+                    Like the following:</p>
+                    <img style="width: 60%" src="image/img_AAA_2.png" alt="">
+                    <img style="width: 60%" src="image/img_AAA_3.png" alt="">
+
+                    <h3>JUST DON'T FORGET:</h3>
+                    <span style="background: #888888">import pandas as pd</span>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2021 Dairui Zhang. All Rights Reserved.</p>
+        <a href="https://github.com/DairuiZhangNJIT/InternetHistory_Dairui"><strong>Github</strong>Source code</a>
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F601history.eastus.azurecontainer.io%2F">
+            <strong> W3C </strong> Validator </a>
+    </footer>
+</body>
+
+</html>
